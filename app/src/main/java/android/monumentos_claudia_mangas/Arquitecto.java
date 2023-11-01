@@ -2,11 +2,11 @@ package android.monumentos_claudia_mangas;
 
 public class Arquitecto {
     private String nombre;
-    private char sexo; // 'M' para masculino, 'F' para femenino, 'O' para otros
+    private String sexo; // 'M' para masculino, 'F' para femenino, 'O' para otros
     private String pais;
 
     // Constructor
-    public Arquitecto(String nombre, char sexo, String pais) {
+    public Arquitecto(String nombre, String sexo, String pais) {
         this.nombre = nombre;
         this.sexo = sexo;
         this.pais = pais;
@@ -22,11 +22,11 @@ public class Arquitecto {
         this.nombre = nombre;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

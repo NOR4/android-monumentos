@@ -1,5 +1,7 @@
 package android.monumentos_claudia_mangas;
 
+import android.graphics.drawable.Drawable;
+
 public class Monumento {
     private String nombre;
     private String pais;
@@ -9,13 +11,13 @@ public class Monumento {
     private String descripcion;
     private boolean esPatrimonioMundial;
     private String estiloArquitectonico;
-    private double altura;
-    private String urlImagen;
+    private int altura;
+    private int imgId;
 
     // Constructor
     public Monumento(String nombre, String pais, String ciudad, int anioConstruccion,
                      Arquitecto arquitecto, String descripcion, boolean esPatrimonioMundial,
-                     String estiloArquitectonico, double altura, String urlImagen) {
+                     String estiloArquitectonico, int altura, int imgId) {
         this.nombre = nombre;
         this.pais = pais;
         this.ciudad = ciudad;
@@ -25,9 +27,10 @@ public class Monumento {
         this.esPatrimonioMundial = esPatrimonioMundial;
         this.estiloArquitectonico = estiloArquitectonico;
         this.altura = altura;
-        this.urlImagen = urlImagen; // Asignación del campo de la imagen
+        this.imgId = imgId;
     }
 
+    // Getters y setters
     public String getNombre() {
         return nombre;
     }
@@ -92,25 +95,21 @@ public class Monumento {
         this.estiloArquitectonico = estiloArquitectonico;
     }
 
-    public double getAltura() {
+    public int getAltura() {
         return altura;
     }
 
-    public void setAltura(double altura) {
+    public void setAltura(int altura) {
         this.altura = altura;
     }
 
-    public String getUrlImagen() {
-        return urlImagen;
+    public int getImgId() {
+        return imgId;
     }
 
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
+    public void setImagen(int imgId) {
+        this.imgId =imgId;
     }
-
-
-
-    // Getters y setters
 
 }
 
